@@ -1,9 +1,9 @@
 # expo-payment-reminder
 
-Create a payment reminder in a modal sheet — pick a contact, date, month, and amount, hit "Remind me" — and it collapses into a floating, draggable pill. Tap that pill and it morphs directly into a full reminders list, no modals, no popovers, just the pill growing into the sheet it already is. Built for fintech apps.
+Create a payment reminder in a modal sheet pick a contact, date, month, and amount, hit "Remind me" and it collapses into a floating, draggable pill. Tap that pill and it morphs directly into a full reminders list, no modals, no popovers, just the pill growing into the sheet it already is. Built for fintech apps.
 
-<!-- TODO: hero gif -->
-<img width="1280" height="720" alt="payment-reminder" src="PASTE_HERO_GIF_URL_HERE" />
+<img width="800" height="450" alt="km_20260811_1080p_30f_20260811_021328-ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/6452d068-e79a-46d4-8581-57169c608a4b" />
+
 
 ---
 
@@ -113,8 +113,11 @@ export function CustomReminderFlow() {
 
 ## Preview
 
-<!-- TODO: preview video -->
-PASTE_PREVIEW_VIDEO_URL_HERE
+
+
+https://github.com/user-attachments/assets/5cec168d-0dac-4309-b5eb-036c1a94648c
+
+
 
 ---
 
