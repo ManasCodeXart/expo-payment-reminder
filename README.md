@@ -1,6 +1,6 @@
 # expo-payment-reminder
 
-Create a payment reminder in a modal sheet pick a contact, date, month, and amount, hit "Remind me" and it collapses into a floating, draggable pill. Tap that pill and it morphs directly into a full reminders list, no modals, no popovers, just the pill growing into the sheet it already is. Built for fintech apps.
+Create a payment reminder in a modal sheet — pick a contact, date, month, and amount, hit "Remind me" — and it collapses into a floating, draggable pill. Tap that pill and it morphs directly into a full reminders list, no modals, no popovers, just the pill growing into the sheet it already is. Built for fintech apps.
 
 <!-- TODO: hero gif -->
 <img width="1280" height="720" alt="payment-reminder" src="PASTE_HERO_GIF_URL_HERE" />
@@ -9,14 +9,15 @@ Create a payment reminder in a modal sheet pick a contact, date, month, and amou
 
 ## ✨ Features
 
-- 💊 **Morph, not modal** — the create flow lives in a `Modal`, but viewing your reminders doesn't: tapping the pill grows it directly into the reminders list using a headless `morph-box` primitive, instead of popping another `Modal` over the screen
-- 🎯 **Position-synced morph box** — the pill and the expanded sheet share the same `translateX`/`translateY` shared values, so the sheet always grows out of exactly where the pill is sitting — even after you've dragged it somewhere else
-- 🕹️ **Draggable pill** — pan anywhere on screen, disabled automatically while the sheet is open so the drag gesture never fights the morph
-- 🔢 **Dual-speed `AnimatedCounter` reveals** — the pill's amount counts up in 300ms; each row's amount counts up in 600ms, landing in sync with that row's progress-bar fill
+- 🎛️ **Trigger it your way** — `ReminderCreateSheet` ships with a built-in "Set Reminder" button, or drive it with your own `open` / `onClose` in controlled mode
+- 🎠 **Snapping avatar carousel** — pick who to remind; scale, opacity, and translate are all driven by scroll position, with a haptic tick on every snap
 - 📅 **Looping day picker + worklet tick slider** — `DateScrollPicker` wraps at both ends, `VerticalTickSlider` snaps to nearest step with a spring settle, both driven entirely on the UI thread
-- ⌨️ **Decoupled keypad sheet** — slide-in/out animation and mount state are handled as two independent effects, so a fast open → close → open never leaves the sheet in a half-animated state
-- 🔒 **Race-safe confirm** — a ref-backed guard on "Remind me" blocks a double-tap from creating two reminders off a single confirm
-- 🎛️ **Controlled or uncontrolled** — use `ReminderCreateSheet` with its own built-in trigger button, or drive it with your own `open` / `onClose`
+- ⌨️ **Decoupled keypad sheet** — amount entry slides up as its own sheet; slide-in/out animation and mount state are handled as two independent effects, so a fast open → close → open never leaves it in a half-animated state
+- 🔒 **Race-safe confirm** — a ref-backed guard on "Remind me" blocks a double-tap from creating two reminders off a single confirm, then the sheet flies out and a new pill drops in its place
+- 🕹️ **Draggable pill** — the reminder collapses into a floating pill you can pan anywhere on screen; dragging is disabled automatically while the sheet is open so the gesture never fights the morph
+- 💊 **Morph, not modal** — the create flow lives in a `Modal`, but viewing reminders doesn't: tap the pill and it grows directly into the reminders list using a headless `morph-box` primitive, instead of popping another `Modal` over the screen
+- 🎯 **Position-synced morph box** — the pill and the expanded sheet share the same `translateX`/`translateY` shared values, so the sheet always grows out of exactly where the pill is sitting — even after you've dragged it somewhere else
+- 🔢 **Dual-speed `AnimatedCounter` reveals** — the pill's amount counts up in 300ms; each row's amount counts up in 600ms, landing in sync with that row's progress-bar fill
 - 🧠 **TypeScript-first** — `PillData`, `ReminderItem`, `Contact` typed consistently across every component boundary
 
 ---
