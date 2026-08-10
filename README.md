@@ -1,6 +1,6 @@
 # expo-payment-reminder
 
-A floating, draggable payment reminder pill that morphs directly into a full reminders list — no modals, no popovers, just the pill growing into the sheet it already is. Built for fintech apps.
+Create a payment reminder in a modal sheet pick a contact, date, month, and amount, hit "Remind me" and it collapses into a floating, draggable pill. Tap that pill and it morphs directly into a full reminders list, no modals, no popovers, just the pill growing into the sheet it already is. Built for fintech apps.
 
 <!-- TODO: hero gif -->
 <img width="1280" height="720" alt="payment-reminder" src="PASTE_HERO_GIF_URL_HERE" />
@@ -9,7 +9,7 @@ A floating, draggable payment reminder pill that morphs directly into a full rem
 
 ## ✨ Features
 
-- 💊 **Morph, not modal** — tapping the pill grows it directly into the reminders list using a headless `morph-box` primitive, instead of popping a `Modal` over the screen
+- 💊 **Morph, not modal** — the create flow lives in a `Modal`, but viewing your reminders doesn't: tapping the pill grows it directly into the reminders list using a headless `morph-box` primitive, instead of popping another `Modal` over the screen
 - 🎯 **Position-synced morph box** — the pill and the expanded sheet share the same `translateX`/`translateY` shared values, so the sheet always grows out of exactly where the pill is sitting — even after you've dragged it somewhere else
 - 🕹️ **Draggable pill** — pan anywhere on screen, disabled automatically while the sheet is open so the drag gesture never fights the morph
 - 🔢 **Dual-speed `AnimatedCounter` reveals** — the pill's amount counts up in 300ms; each row's amount counts up in 600ms, landing in sync with that row's progress-bar fill
